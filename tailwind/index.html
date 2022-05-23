@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
     <link rel="icon" href="./img/Footer/Mini/Logomark/Color.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -25,6 +26,26 @@
                     wow.init();
 
               </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide', {
+              perPage:3,
+              gap: "32px",
+              breakpoints: {
+                  640: {
+                      perPage:1,
+                    },
+                 768: {
+                      perPage:2,
+                    },   
+                  },
+    
+          });
+          splide.mount();
+        } );
+      </script>
+
     <title> Landify </title>
 </head>
 <body>
@@ -85,19 +106,18 @@
             <h2 class ="text-h2 font-extrabold"> 1,500,000+ </h2>
             <p class="text-p"> Customers who use Landify UI Kit to build their new startup landing page. </p>
         </div>
-        <div class="wow animate__slideInRight grid grid-rows-2"> 
-            <div class=" grid grid-cols-4 items-center"> 
+        <div class="wow animate__slideInRight grid grid-cols-2 md:grid-cols-4  place-items-start sm:place-items-center"> 
+            
                 <img  src="img/Logo Clouds/Airbnb Logo.svg" alt="logo"/>
                 <img  src="img/Logo Clouds/Amazon Logo.svg" alt="logo"/>
                 <img  src="img/Logo Clouds/FedEx Logo.svg" alt="logo"/>
-                <img src="img/Logo Clouds/Google Logo.svg" alt="logo"/>
-            </div>
-            <div class=" grid grid-cols-4 items-center" >
+                <img  src="img/Logo Clouds/Google Logo.svg" alt="logo"/>
+
                 <img  src="img/Logo Clouds/Microsoft Logo.svg" alt="logo"/>
                 <img  src="img/Logo Clouds/OLA Logo.svg" alt="logo"/>
                 <img  src="img/Logo Clouds/OYO Logo.svg" alt="logo"/>
-                <img  src="img/Logo Clouds/Walmart Logo.svg" alt="logo"/>
-            </div>
+                <img  class="text-center" src="img/Logo Clouds/Walmart Logo.svg" alt="logo"/>
+            
         </div>
   </div>
 <!-- End Logo Cloud -->
@@ -110,9 +130,8 @@
         <p class="text-p "> Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
     </div>
 
-    <div class="wow animate__fadeInUp grid grid-rows-2 py-8 text-center gap-y-16 mt-12">
-        <!-- row 1 -->
-        <div class="grid grid-cols-3 mx-auto gap-x-8 "> 
+    <div class="wow animate__fadeInUp grid grid-cols-2 md:grid-cols-3  py-8 text-center gap-y-16 mt-12">
+        
             <div class ="text-center">
                 <img class="mx-auto px-6" src="img/Feature/Multiple/Feature Icons/01.svg" alt="feature" />
                 <h5 class="text-h5 font-extrabold">Robust workflow</h5>
@@ -128,9 +147,7 @@
                 <h5 class="text-h5 font-extrabold">User friendly</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
             </div>
-        </div>
-        <!-- row 2 -->
-        <div class="grid grid-cols-3 mx-auto gap-x-8 "> 
+         
             <div class ="text-center">
                 <img class="mx-auto px-6" src="img/Feature/Multiple/Feature Icons/05.svg" alt="feature" />
                 <h5 class="text-h5 font-extrabold">Multiple layouts</h5>
@@ -146,7 +163,7 @@
                 <h5 class="text-h5 font-extrabold">Robust workflow</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
              </div>       
-        </div>
+        
     </div>
 </div>
  <!-- End Tailor-made features -->      
@@ -160,66 +177,386 @@
         </div>
 
         <div class="py-8 px-4">
+            <div class ="grid grid-cols-3 gap-x-8"></div>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="wow animate__fadeInLeftBig flex flex-col">
+                                <div class ="bg-white p-10 rounded-xl text-center">
+                                    <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                </div>
+                                <div class="mx-auto">
+                                <img src="img/arrow.svg" alt="arrow"/>
+                                </div>
+                                <div class="flex justify-center mt-4">
+                    
+                                    <div style="background-image: url('./img/avt.avif')" 
+                                    class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                    </div>
+                                </div>
+                                <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                    
+                                <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                            </div>
 
-            <div class ="grid grid-cols-3 gap-x-8">
-                <div class="wow animate__fadeInLeftBig flex flex-col">
-                    <div class ="bg-white p-10 rounded-xl text-center">
-                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
-                    </div>
-                    <div class="mx-auto">
-                    <img src="img/arrow.svg" alt="arrow"/>
-                    </div>
-                    <div class="flex justify-center mt-4">
-        
-                        <div style="background-image: url('./img/avt.avif')" 
-                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
-                        </div>
-                    </div>
-                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
-        
-                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
-                </div>
-                <div class="wow animate__fadeInUpBig flex flex-col">
-                    <div class ="bg-white p-10 rounded-xl text-center">
-                        <h5 class="text-h5 font-bold">Intuitive Design</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
-                    </div>
-                    <div class="mx-auto">
-                    <img src="img/arrow.svg" alt="arrow"/>
-                    </div>
-                    <div class="flex justify-center mt-4">
-        
-                        <div style="background-image: url('./img/avt.avif')" 
-                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
-                        </div>
-                    </div>
-                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
-        
-                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
-                </div>
-                <div class="wow animate__fadeInRightBig flex flex-col">
-                    <div class ="bg-white p-10 rounded-xl text-center">
-                        <h5 class="text-h5 font-bold">Mindblowing Service</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
-                    </div>
-                    <div class="mx-auto">
-                    <img src="img/arrow.svg" alt="arrow"/>
-                    </div>
-                    <div class="flex justify-center mt-4">
-        
-                        <div style="background-image: url('./img/avt.avif')" 
-                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
-                        </div>
-                    </div>
-                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
-        
-                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
-                </div>
-            </div>
-            <div class="flex justify-center mt-4"> 
+                          </li>
+                          <li class="splide__slide">
+                            <div class="wow animate__fadeInLeftBig flex flex-col">
+                                <div class ="bg-white p-10 rounded-xl text-center">
+                                    <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                </div>
+                                <div class="mx-auto">
+                                <img src="img/arrow.svg" alt="arrow"/>
+                                </div>
+                                <div class="flex justify-center mt-4">
+                    
+                                    <div style="background-image: url('./img/avt.avif')" 
+                                    class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                    </div>
+                                </div>
+                                <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                    
+                                <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                            </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="wow animate__fadeInLeftBig flex flex-col">
+                                    <div class ="bg-white p-10 rounded-xl text-center">
+                                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                    </div>
+                                    <div class="mx-auto">
+                                    <img src="img/arrow.svg" alt="arrow"/>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                        
+                                        <div style="background-image: url('./img/avt.avif')" 
+                                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                        </div>
+                                    </div>
+                                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                        
+                                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="wow animate__fadeInLeftBig flex flex-col">
+                                    <div class ="bg-white p-10 rounded-xl text-center">
+                                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                    </div>
+                                    <div class="mx-auto">
+                                    <img src="img/arrow.svg" alt="arrow"/>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                        
+                                        <div style="background-image: url('./img/avt.avif')" 
+                                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                        </div>
+                                    </div>
+                                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                        
+                                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="wow animate__fadeInLeftBig flex flex-col">
+                                    <div class ="bg-white p-10 rounded-xl text-center">
+                                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                    </div>
+                                    <div class="mx-auto">
+                                    <img src="img/arrow.svg" alt="arrow"/>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                        
+                                        <div style="background-image: url('./img/avt.avif')" 
+                                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                        </div>
+                                    </div>
+                                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                        
+                                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="wow animate__fadeInLeftBig flex flex-col">
+                                    <div class ="bg-white p-10 rounded-xl text-center">
+                                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                    </div>
+                                    <div class="mx-auto">
+                                    <img src="img/arrow.svg" alt="arrow"/>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                        
+                                        <div style="background-image: url('./img/avt.avif')" 
+                                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                        </div>
+                                    </div>
+                                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                        
+                                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                </div>
+                            </li>  
+                            <li class="splide__slide">
+                                <div class="wow animate__fadeInLeftBig flex flex-col">
+                                    <div class ="bg-white p-10 rounded-xl text-center">
+                                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                    </div>
+                                    <div class="mx-auto">
+                                    <img src="img/arrow.svg" alt="arrow"/>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                        
+                                        <div style="background-image: url('./img/avt.avif')" 
+                                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                        </div>
+                                    </div>
+                                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                        
+                                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                </div>
+                            </li>     
+                            <li class="splide__slide">
+                                <div class="wow animate__fadeInLeftBig flex flex-col">
+                                    <div class ="bg-white p-10 rounded-xl text-center">
+                                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                    </div>
+                                    <div class="mx-auto">
+                                    <img src="img/arrow.svg" alt="arrow"/>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                        
+                                        <div style="background-image: url('./img/avt.avif')" 
+                                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                        </div>
+                                    </div>
+                                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                        
+                                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                </div>
+                            </li>     
+                            <li class="splide__slide">
+                                <div class="wow animate__fadeInLeftBig flex flex-col">
+                                    <div class ="bg-white p-10 rounded-xl text-center">
+                                        <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                    </div>
+                                    <div class="mx-auto">
+                                    <img src="img/arrow.svg" alt="arrow"/>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                        
+                                        <div style="background-image: url('./img/avt.avif')" 
+                                        class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                        </div>
+                                    </div>
+                                    <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                        
+                                    <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                </div>
+                            </li>         
+                      </ul>
+                      
+              </section>
+   
+                <!-- <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                <div class ="grid grid-cols-3 gap-x-8">
+                                    <div class="wow animate__fadeInLeftBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+
+                                    <div class="wow animate__fadeInUpBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Intuitive Design</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+
+                                    <div class="wow animate__fadeInRightBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Mindblowing Service</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                <div class ="grid grid-cols-3 gap-x-8">
+                                    <div class="wow animate__fadeInLeftBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+
+                                    <div class="wow animate__fadeInUpBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Intuitive Design</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+
+                                    <div class="wow animate__fadeInRightBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Mindblowing Service</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+                                </div>
+                                
+                                </li>
+                              <li class="splide__slide">
+                                <div class ="grid grid-cols-3 gap-x-8">
+                                    <div class="wow animate__fadeInLeftBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Efficient Collaborating</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+
+                                    <div class="wow animate__fadeInUpBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Intuitive Design</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+
+                                    <div class="wow animate__fadeInRightBig flex flex-col">
+                                        <div class ="bg-white p-10 rounded-xl text-center">
+                                            <h5 class="text-h5 font-bold">Mindblowing Service</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p> 
+                                        </div>
+                                        <div class="mx-auto">
+                                        <img src="img/arrow.svg" alt="arrow"/>
+                                        </div>
+                                        <div class="flex justify-center mt-4">
+                            
+                                            <div style="background-image: url('./img/avt.avif')" 
+                                            class="w-7 h-7 rounded-full bg-cover bg-center" > 
+                                            </div>
+                                        </div>
+                                        <sub class="font-bold text-center mt-2">Jane Cooper</sub>
+                            
+                                        <b2 class="text-center mt-2"> CEO at ABC Corporation</b2>
+                                    </div>
+                                </div>
+                              </li>
+                          </ul>
+
+                  </section> -->
+        </div>
+            <!-- <div class="flex justify-center mt-4"> 
                 <img src="./img/Feature/Single/Slider controls/1.svg"/>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -230,7 +567,7 @@
 <div class="container mt-16 mb-20">
     <div class="items-center grid grid-cols-2">
         <h3 class="text-h3 font-extrabold "> Enter the world of all fashion trends</h3>
-        <p class="wow animate__fadeInTopRight text-p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non tincidunt sit lectus senectus.</p>
+        <p class="wow animate__fadeInDown text-p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non tincidunt sit lectus senectus.</p>
     </div>
     <img class="mt-16 w-full " src="./img/Feature/Single/Cover Image.svg" alt="anh"/>
 </div>
@@ -239,7 +576,7 @@
 <!-- Begin my recent work-->
 <div id="product" class="bg-brand-blue-100 py-20">
     <div class="container gap-12"> 
-        <h2 class="text-h2 font-bold"> Some of my recent work</h2>
+        <h2 class="text-h2 font-bold text-center md:text-left"> Some of my recent work</h2>
 
         <div class="grid grid-cols-2 gap-y-16 gap-x-4 mt-12">
             <div class="wow animate__zoomIn items-center"> 
@@ -274,12 +611,12 @@
 
 <!-- Begin achievements -->
 
-<div class="container items-center grid lg:grid-cols-2 lg:row-span-1 gap-x-8 pt-14"> 
+<div class="container items-center grid lg:grid-cols-2 lg:row-span-1 gap-x-8 pt-14 place-items-start sm:place-items-center "> 
         <div class="items-center text-center lg:text-left">
             <h2 class ="text-h2 font-extrabold"> Our 18 years of achievements </h2>
             <p class="text-p"> With our super powers we have reached this </p>
         </div>
-    <div class="grid grid-rows-2 gap-y-10"> 
+    <div class="grid grid-rows-2 gap-y-10 mt-10 lg:mt-auto"> 
         <div class=" grid grid-cols-2 gap-x-8"> 
             <div class="wow animate__flipInX flex flex-row gap-x-4">
                 <img class="w-12" src="./img/Stats/Feature Icons/01.svg" alt="logo"/>
@@ -318,11 +655,11 @@
 <!-- End achievements-->
 
 <!-- Begin Feature 5 -->
-<div class="container mt-20 grid grid-cols-2 items-center gap-y-8 p-12">
+<div class="container mt-20 grid lg:grid-cols-2 lg:row-span-1 items-center gap-y-8 lg:py-12 py-6 ">
     <div>
-        <img src="img/Feature/Single/Phone Mockup.svg" alt="anh dt" />
+        <img class="w-full" src="img/Feature/Single/Phone Mockup.svg" alt="anh dt" />
     </div>
-    <div class ="p-12 w-full">
+    <div class ="pb-12 pt-8 lg:p-12 w-full">
         <h3 class="text-h3 font-border"> Headline</h3>
         <p class="wow animate__fadeInDown mt-8">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel. </p>
         <div class="mt-8 text-brand-purple-default" > 
@@ -334,7 +671,7 @@
 
 <!-- Begin Feature 4-->
 
-<div class="mt-20 lg:mt-60"> 
+<div class="mt-0 mb-10 lg:mt-60"> 
     <div class ="container relative grid grid-cols-2 items-center rounded-xl gap-y-8 bg-brand-purple-default text-white p-12" >
         <div>
             <h3 class="text-h3 font-border"> Headline</h3>
@@ -344,7 +681,7 @@
             </div>
         </div>
 
-        <div class="lg:absolute left-1/2 transfom-y-1/2 lg:translate-x-1/2">
+        <div class="lg:absolute xl:left-1/2 left-[400px] transfom-y-1/2 lg:translate-x-1/2" >
             <img src="img/Feature/Single/Mobile/iPhone X.svg" alt="anh dt" />
         </div>
 

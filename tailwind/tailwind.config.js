@@ -45,6 +45,9 @@ module.exports = {
 
     },
   },
+  safelist: [
+    "splide__pagination"
+  ],
   variants: {
     extend: {},
   },

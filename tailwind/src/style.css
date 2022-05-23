@@ -1,3 +1,39 @@
 @tailwind base; 
 @tailwind components; 
 @tailwind utilities;
+.splide__pagination.splide__pagination--ltr {
+    bottom: -80px;
+    left: 0;
+    padding: 0 1em;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    align-self: center;
+    }
+
+    .splide__pagination .splide__pagination__page {
+        width: 8px;
+        height: 8px;
+        background: #2EC5CE
+        }  
+        .splide__pagination .splide__pagination__page.is-active {
+            width: 14px;
+            height:14px;
+            background: rgb(255, 255, 255);
+            border: 3px solid #2EC5CE;
+
+            }
+
+.splide__arrow.splide__arrow--prev { 
+    left: -42px;
+    background: #2EC5CE
+
+}
+
+.splide__arrow.splide__arrow--next { 
+    right: -42px;
+    background: #2EC5CE
+
+}
+    
