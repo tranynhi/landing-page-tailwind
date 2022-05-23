@@ -2,6 +2,8 @@ module.exports = {
   content: [
     "**/*.html"
   ],
+  important: true,
+  
   darkMode: 'class', // or 'media' or 'class'
   theme: { 
     container: {
