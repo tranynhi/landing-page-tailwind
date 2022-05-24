@@ -26,14 +26,24 @@
             }
 
 .splide__arrow.splide__arrow--prev { 
-    left: -42px;
-    background: #2EC5CE
+    left: 0;
+    background: none
 
 }
-
+.splide__arrow.splide__arrow--prev.splide__arrow svg {
+    width:0;
+    height:0
+}
 .splide__arrow.splide__arrow--next { 
-    right: -42px;
-    background: #2EC5CE
+    right: 0;
+    background: none
 
 }
+.splide__arrow.splide__arrow--next.splide__arrow svg {
+    width:0;
+    height:0
+}
+
+
+
     
